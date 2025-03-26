@@ -5,8 +5,6 @@ import Logo from '@/components/Logo';
 import Countdown from '@/components/Countdown';
 import SignupForm from '@/components/SignupForm';
 
-<lov-add-dependency>framer-motion@latest</lov-add-dependency>
-
 const Index = () => {
   return (
     <div className="min-h-screen flex flex-col relative overflow-hidden">
