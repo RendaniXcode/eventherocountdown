@@ -9,7 +9,7 @@ interface TimeLeft {
 }
 
 const calculateTimeLeft = (): TimeLeft => {
-  const targetDate = new Date('April 1, 2025 00:00:00').getTime();
+  const targetDate = new Date('April 30, 2025 00:00:00').getTime();
   const now = new Date().getTime();
   const difference = targetDate - now;
   
@@ -52,24 +52,24 @@ const Countdown: React.FC = () => {
   
   return (
     <div className="flex flex-col items-center animate-slide-up" style={{ animationDelay: '0.3s' }}>
-      <h2 className="text-xl font-light mb-6 text-center">
+      <h2 className="text-xl font-light mb-3 text-center">
         <span className="opacity-80">Launching</span>
-        <span className="ml-2 text-glow text-neon-blue">April 1, 2025</span>
+        <span className="ml-2 text-glow text-neon-yellow">April 30, 2025</span>
       </h2>
       
-      <div className="flex flex-wrap justify-center gap-4 md:gap-8">
+      <div className="flex flex-wrap justify-center gap-2 md:gap-4">
         {timeUnits.map((unit, index) => (
           <div 
             key={unit.label} 
             className="flex flex-col items-center"
             style={{ animationDelay: `${0.4 + index * 0.1}s` }}
           >
-            <div className="glass-card w-20 h-20 md:w-24 md:h-24 rounded-xl flex items-center justify-center animate-slide-up">
-              <span className="text-3xl md:text-4xl font-bold">
+            <div className="glass-card w-16 h-16 md:w-20 md:h-20 rounded-lg flex items-center justify-center animate-slide-up border border-neon-yellow/30">
+              <span className="text-2xl md:text-3xl font-bold text-neon-yellow">
                 {unit.value.toString().padStart(2, '0')}
               </span>
             </div>
-            <span className="mt-2 text-xs text-white/70 uppercase tracking-wider">{unit.label}</span>
+            <span className="mt-1 text-xs text-neon-yellow/70 uppercase tracking-wider">{unit.label}</span>
           </div>
         ))}
       </div>

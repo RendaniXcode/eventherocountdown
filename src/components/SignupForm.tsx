@@ -47,8 +47,8 @@ const SignupForm: React.FC = () => {
   };
 
   return (
-    <div className="w-full max-w-md mx-auto animate-slide-up" style={{ animationDelay: '0.6s' }}>
-      <div className="glass-card rounded-2xl p-6 md:p-8">
+    <div className="w-full max-w-md animate-slide-up" style={{ animationDelay: '0.6s' }}>
+      <div className="glass-card rounded-2xl p-6 border border-neon-yellow/30">
         <h3 className="text-xl font-medium mb-4 text-center">Get early access</h3>
         
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -59,7 +59,7 @@ const SignupForm: React.FC = () => {
                 name="firstName"
                 placeholder="First Name"
                 required
-                className="form-input"
+                className="form-input bg-black/60 text-white border-neon-yellow/30 focus:border-neon-yellow focus:ring-neon-yellow"
                 value={formData.firstName}
                 onChange={handleChange}
               />
@@ -70,7 +70,7 @@ const SignupForm: React.FC = () => {
                 name="lastName"
                 placeholder="Last Name"
                 required
-                className="form-input"
+                className="form-input bg-black/60 text-white border-neon-yellow/30 focus:border-neon-yellow focus:ring-neon-yellow"
                 value={formData.lastName}
                 onChange={handleChange}
               />
@@ -83,7 +83,7 @@ const SignupForm: React.FC = () => {
               name="email"
               placeholder="Email Address"
               required
-              className="form-input"
+              className="form-input bg-black/60 text-white border-neon-yellow/30 focus:border-neon-yellow focus:ring-neon-yellow"
               value={formData.email}
               onChange={handleChange}
             />
@@ -92,7 +92,7 @@ const SignupForm: React.FC = () => {
           <button
             type="submit"
             disabled={loading}
-            className="w-full py-3 px-4 bg-black border border-neon-blue rounded-lg font-medium transition-all duration-300 button-glow button-glow-blue hover:text-neon-blue disabled:opacity-50 disabled:pointer-events-none"
+            className="w-full py-3 px-4 bg-black border border-neon-yellow rounded-lg font-medium transition-all duration-300 button-glow hover:text-neon-yellow disabled:opacity-50 disabled:pointer-events-none text-white"
           >
             {loading ? "Joining..." : "Join the Waitlist"}
           </button>

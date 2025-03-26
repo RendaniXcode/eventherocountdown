@@ -57,7 +57,11 @@ export default {
 					blue: "#00f3ff",
 					purple: "#9d00ff",
 					pink: "#ff0099",
-					yellow: "#f6fa70"
+					yellow: "#cfff04", // Updated neon yellow
+					yellow1: "#d9ff36", // From palette: #d9ff36 (217,255,54)
+					yellow2: "#e2ff68", // From palette: #e2ff68 (226,255,104)
+					yellow3: "#ecff9b", // From palette: #ecff9b (236,255,155)
+					yellow4: "#f5ffcd"  // From palette: #f5ffcd (245,255,205)
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
