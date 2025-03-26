@@ -52,20 +52,20 @@ const Countdown: React.FC = () => {
   
   return (
     <div className="flex flex-col items-center animate-slide-up" style={{ animationDelay: '0.3s' }}>
-      <h2 className="text-xl font-light mb-3 text-center">
+      <h2 className="text-base font-light mb-2 text-center">
         <span className="opacity-80">Launching</span>
         <span className="ml-2 text-glow text-neon-yellow">April 30, 2025</span>
       </h2>
       
-      <div className="flex flex-wrap justify-center gap-2 md:gap-4">
+      <div className="flex flex-wrap justify-center gap-2">
         {timeUnits.map((unit, index) => (
           <div 
             key={unit.label} 
             className="flex flex-col items-center"
             style={{ animationDelay: `${0.4 + index * 0.1}s` }}
           >
-            <div className="glass-card w-16 h-16 md:w-20 md:h-20 rounded-lg flex items-center justify-center animate-slide-up border border-neon-yellow/30">
-              <span className="text-2xl md:text-3xl font-bold text-neon-yellow">
+            <div className="glass-card w-14 h-14 rounded-lg flex items-center justify-center animate-slide-up border border-neon-yellow/30">
+              <span className="text-xl font-bold text-neon-yellow">
                 {unit.value.toString().padStart(2, '0')}
               </span>
             </div>

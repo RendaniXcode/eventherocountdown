@@ -18,12 +18,12 @@ const Index = () => {
       {/* Content */}
       <div className="container mx-auto px-4 h-full flex flex-col relative z-10">
         {/* Header */}
-        <header className="flex justify-between items-center pt-6 animate-slide-up">
+        <header className="flex justify-between items-center pt-4 animate-slide-up">
           <Logo />
           
           <a 
             href="#signup" 
-            className="py-2 px-4 border border-neon-yellow/40 rounded-lg text-sm hover:bg-neon-yellow/5 transition-colors text-neon-yellow"
+            className="py-1.5 px-3 border border-neon-yellow/40 rounded-lg text-xs hover:bg-neon-yellow/5 transition-colors text-neon-yellow font-light"
           >
             Join Now
           </a>
@@ -36,23 +36,23 @@ const Index = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="flex flex-col justify-center space-y-6"
+              className="flex flex-col justify-center space-y-4"
             >
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
                   The Future of 
-                  <span className="block mt-2 gradient-text from-neon-yellow via-neon-yellow2 to-neon-yellow4">
+                  <span className="block mt-2 gradient-text from-neon-yellow via-neon-yellow2 to-neon-yellow4 font-extrabold">
                     Event Ticketing
                   </span>
                 </h1>
               </motion.div>
               
               <motion.p 
-                className="text-lg text-white/80 max-w-lg"
+                className="text-base md:text-lg text-white/80 max-w-lg font-light"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
@@ -70,7 +70,7 @@ const Index = () => {
         </main>
         
         {/* Footer */}
-        <footer className="py-4 text-center text-white/60 text-sm animate-slide-up" style={{ animationDelay: '0.8s' }}>
+        <footer className="py-3 text-center text-white/60 text-xs animate-slide-up font-light" style={{ animationDelay: '0.8s' }}>
           <p>&copy; {new Date().getFullYear()} EventHero. All rights reserved.</p>
         </footer>
       </div>
