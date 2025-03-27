@@ -1,69 +1,57 @@
-# Welcome to your Lovable project
+# Vite React Shadcn UI TypeScript
 
-## Project info
+A modern React application built with Vite, TypeScript, and Shadcn UI components.
 
-**URL**: https://lovable.dev/projects/f5ca5c72-b41f-466b-a163-c0c6c919932f
+## Overview
 
-## How can I edit this code?
+This project is a web application built with a powerful modern tech stack that includes React 18, TypeScript, Vite, and Shadcn UI components (via Radix UI). The application provides a solid foundation for building high-performance web interfaces with an elegant component system.
 
-There are several ways of editing your application.
+## Features
 
-**Use Lovable**
+- ⚡️ **Vite** - Lightning fast build tool that significantly improves development experience
+- 🧩 **React 18** - Latest React features and improvements
+- 🔍 **TypeScript** - Type safety for better developer experience
+- 🎨 **Shadcn UI** - Beautiful, accessible UI components built with Radix UI and Tailwind CSS
+- 🌓 **Theme Support** - Light/dark mode via next-themes
+- 📊 **Recharts** - Powerful charting library for data visualization
+- 🚀 **React Query** - Data fetching and state management
+- 📝 **React Hook Form** with Zod validation - Form handling with schema validation
+- 🎭 **Framer Motion** - Animations made easy
+- 🔄 **React Router** - Client-side routing
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f5ca5c72-b41f-466b-a163-c0c6c919932f) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Node.js (recommended latest LTS version)
+- npm (comes with Node.js)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd vite_react_shadcn_ts
+   ```
 
-Follow these steps:
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+4. Open your browser and navigate to `http://localhost:8080`
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Available Scripts
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+- **`npm run dev`**: Starts the development server
+- **`npm run build`**: Builds the app for production
+- **`npm run build:dev`**: Builds the app with development settings
+- **`npm run lint`**: Runs ESLint to check code quality
+- **`npm run preview`**: Previews the built app locally before deploying
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/f5ca5c72-b41f-466b-a163-c0c6c919932f) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+## Project Structure

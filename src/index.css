@@ -1,9 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
 @layer base {
   :root {
@@ -41,12 +40,12 @@
   * {
     @apply border-border selection:bg-white/10 selection:text-white;
   }
-  
+
   html {
     font-family: 'Manrope', sans-serif;
     scroll-behavior: smooth;
   }
-  
+
   body {
     @apply bg-black text-white antialiased overflow-x-hidden;
   }
@@ -65,56 +64,56 @@
   .glass-card {
     @apply bg-black/40 backdrop-blur-xl border border-white/10 shadow-lg;
   }
-  
+
   .neon-glow {
     @apply relative;
   }
-  
+
   .neon-glow::after {
     @apply content-[''] absolute inset-0 z-[-1] blur-md opacity-50 animate-pulse-soft;
   }
-  
+
   .neon-blue::after {
     @apply bg-neon-blue;
   }
-  
+
   .neon-purple::after {
     @apply bg-neon-purple;
   }
-  
+
   .neon-pink::after {
     @apply bg-neon-pink;
   }
-  
+
   .neon-yellow::after {
     @apply bg-neon-yellow;
   }
-  
+
   .text-glow {
     text-shadow: 0 0 10px currentColor;
   }
-  
+
   .gradient-text {
     @apply bg-gradient-to-r bg-clip-text text-transparent animate-gradient-shift;
     background-size: 200% 200%;
   }
-  
+
   .form-input {
     @apply w-full px-4 py-3 bg-black border border-white/20 rounded-lg focus:border-neon-blue focus:ring-1 focus:ring-neon-blue transition-all duration-300 focus:outline-none;
   }
-  
+
   .button-glow {
     @apply relative overflow-hidden transition-all duration-300;
   }
-  
+
   .button-glow::before {
     @apply content-[''] absolute inset-0 blur-sm opacity-0 transition-opacity duration-300;
   }
-  
+
   .button-glow:hover::before {
     @apply opacity-70;
   }
-  
+
   .button-glow-blue::before {
     @apply bg-neon-blue;
   }
